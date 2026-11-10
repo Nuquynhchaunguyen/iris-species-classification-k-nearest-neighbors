@@ -1,0 +1,22 @@
+# Local Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.matplotlib/
+
+# Machine-specific files and secrets
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+
+# The signed peer-validation form and reviewer details belong in Canvas only.
+assignment-validation*.pdf
+peer_validation*
+peer-verification*
+signed_validation*
