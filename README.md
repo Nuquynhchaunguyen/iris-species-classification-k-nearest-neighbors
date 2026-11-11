@@ -127,14 +127,4 @@ The script uses a fixed random state and never changes `k` in response to test r
 | Clone reports “repository not found” | Confirm the repository URL above opens in a browser. The owner must push the final files and grant the reviewer access before validation. |
 | Output numbers differ | Confirm the selected Python environment and package versions, that no script settings were changed, and that the script ran completely. Tiny decimal differences are possible; investigate larger differences before reporting successful replication. |
 
-## Independent verification and submission
 
-After the owner has pushed the **final** files, a classmate must obtain a fresh copy on their **own computer** and follow this README alone. They should verify setup, run the script, and check that all five outputs regenerate. They must record their operating system, Python version, branch, final commit ID (`git rev-parse HEAD`), and any blockers on the course [Project Replication & Peer Verification Form](https://github.com/shylasolis/machine-learning-pathway/blob/main/assignment-validation.pdf). If anything fails or is unclear, document it, fix the code or README, publish an updated commit, and repeat independent verification before either party signs. Do not claim a platform was tested unless it actually was.
-
-Keep signatures, reviewer identity, and the completed form **out of Git**. Submit the accessible student repository URL, branch, and successfully validated commit ID to Canvas, and upload the signed form privately as a PDF with any notes. The required scope is the prescribed KNN investigation; any optional extension must be identified separately and must never tune against the held-out test results.
-
-## Sources and assistance
-
-- [Course KNN guide, guided notebook, homework instructions, and rubric](https://github.com/shylasolis/machine-learning-pathway/tree/main/Project_02_Classification/k-nearest-neighbors) supplied the assignment and teaching background.
-- [scikit-learn Iris dataset documentation](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html) describes the bundled data. The implementation uses scikit-learn's [`train_test_split`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html), [`Pipeline`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html), [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html), [`KNeighborsClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html), and [`DummyClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.dummy.DummyClassifier.html).
-- OpenAI Codex assisted with drafting the implementation and documentation and checking the arithmetic. The repository owner must review the results, be able to explain them, and complete the independent peer verification honestly.
